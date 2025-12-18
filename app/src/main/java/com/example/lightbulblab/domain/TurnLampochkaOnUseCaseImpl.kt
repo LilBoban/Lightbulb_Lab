@@ -1,16 +1,17 @@
-package com.example.lightbulblab.data.domain
+package com.example.lightbulblab.domain
 
 import com.example.lightbulblab.data.LightBulbRepository
 import jakarta.inject.Inject
 
-interface TurnLampochkaOffUseCase {
+interface TurnLampochkaOnUseCase {
     suspend operator fun invoke(): Boolean
 }
 
-class TurnLampochkaOffUseCaseImpl @Inject constructor(
+class TurnLampochkaOnUseCaseImpl @Inject constructor(
     private val repository: LightBulbRepository
-) : TurnLampochkaOffUseCase {
+) : TurnLampochkaOnUseCase {
 
     override suspend operator fun invoke(): Boolean =
-        repository.turnOff()
+        repository.turnOn()
+
 }

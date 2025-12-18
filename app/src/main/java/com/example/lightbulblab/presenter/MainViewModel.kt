@@ -3,7 +3,7 @@ package com.example.lightbulblab.presenter
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.lightbulblab.data.domain.ControlLightUseCase
+import com.example.lightbulblab.domain.ControlLightUseCase
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

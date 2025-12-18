@@ -2,8 +2,8 @@ package com.example.lightbulblab.di
 
 import com.example.lightbulblab.data.LightBulbRepository
 import com.example.lightbulblab.data.LightBulbRepositoryImpl
-import com.example.lightbulblab.data.domain.ControlLightUseCase
-import com.example.lightbulblab.data.domain.ControlLightUseCaseImpl
+import com.example.lightbulblab.domain.ControlLightUseCase
+import com.example.lightbulblab.domain.ControlLightUseCaseImpl
 import dagger.Binds
 import dagger.Module
 

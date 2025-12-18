@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.lightbulblab.R
+import com.example.lightbulblab.appComponent
 import com.example.lightbulblab.databinding.FragmentMainBinding
 import com.example.lightbulblab.di.DaggerAppComponent
 import com.example.lightbulblab.di.viewModel.ViewModelFactory
@@ -24,8 +25,7 @@ class MainFragment: Fragment(R.layout.fragment_main) {
     private val viewModel: MainViewModel by viewModels { viewModelFactory }
 
     override fun onAttach(context: Context) {
-        val component = DaggerAppComponent.create()
-        component.inject(this)
+        context.appComponent.inject(this)
         super.onAttach(context)
     }
 

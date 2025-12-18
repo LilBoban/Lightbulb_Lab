@@ -1,4 +1,4 @@
-package com.example.lightbulblab.data.domain
+package com.example.lightbulblab.domain
 
 import com.example.lightbulblab.data.LightBulbRepository
 import javax.inject.Inject
